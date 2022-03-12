@@ -139,3 +139,41 @@ img {
   font-size: 6rem;
   font-weight: 900;
 }
+
+/* seccion de iconos */
+.iconos {
+  padding: var(--separacion);
+}
+@media (min-width: 768px) {
+  .iconos {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.icono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: calc(var(--separacion) / 1.2);
+}
+
+.icono:last-of-type {
+  margin: 0;
+}
+
+.icono img {
+  width: 5rem;
+}
+
+.icono h3 {
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-top: calc(var(--separacion) / 2);
+}
+
+@media (min-width: 768px){
+  .icono{
+    margin: 0;
+  }
+}
